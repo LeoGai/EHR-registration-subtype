@@ -13,21 +13,21 @@ The experiments require:
 - **R version**: 4.5.1
 - **R libraries**:
 
-- `doParallel` : 1.0.17  
-- `parallel` : 4.5.1  
-- `cluster` : 2.1.8.1  
-- `ggplot2` : 4.0.0  
-- `gridExtra` : 2.3
-- `patchwork` : 1.3.2  
-- `splines` : 4.5.1  
-- `glmnet` : 4.1.10  
-- `tidyverse` : 2.0.0  
-- `kernlab` : 0.9.33  
-- `dtwclust` : 6.0.0  
-- `proxy` : 0.4.27  
-- `mclust` : 6.1.1  
-- `aricode` : 1.0.3  
-- `clue` : 0.3.66 
+ - `doParallel` : 1.0.17  
+ - `parallel` : 4.5.1  
+ - `cluster` : 2.1.8.1  
+ - `ggplot2` : 4.0.0  
+ - `gridExtra` : 2.3
+ - `patchwork` : 1.3.2  
+ - `splines` : 4.5.1  
+ - `glmnet` : 4.1.10  
+ - `tidyverse` : 2.0.0  
+ - `kernlab` : 0.9.33  
+ - `dtwclust` : 6.0.0  
+ - `proxy` : 0.4.27  
+ - `mclust` : 6.1.1  
+ - `aricode` : 1.0.3  
+ - `clue` : 0.3.66 
   
 - **Python version**: 3.6.8
 - **Python libraries**:
