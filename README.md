@@ -5,6 +5,8 @@ This repository contains the code scripts used in the following paper:
 - **Title:** Subtype-Aware Registration of Longitudinal Electronic Health Records
 - **Authors:** Xin Gai, Shiyi Jiang, and Anru R. Zhang
 
+If you have any question about this code, please contact Xin Gai (xg.biostat@gmail.com).
+
 # Reproducing Experiments
 
 ## Setup
