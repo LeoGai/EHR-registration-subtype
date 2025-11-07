@@ -84,7 +84,7 @@ library(patchwork)
   p1<-ggplot(data1, aes(x = Time, y = Value, group = ID, color = as.factor(ID <= 500))) +
     geom_line(size = 0.2) +
     geom_point(size = 0.5) +
-    labs(title = "Scenario 2 True Trajectories", x = "Time", y = "Value", color = "Group") +
+    labs(title = "Scenario 7 True Trajectories", x = "Time", y = "Value", color = "Group") +
     scale_color_manual(values = c("red", "blue"), labels = c("Group 1", "Group 2")) +
     theme(
       legend.position = c(0.99, 0.02), 
@@ -111,7 +111,7 @@ library(patchwork)
   p2<-ggplot(data_shifted, aes(x = Time, y = Value, group = ID)) +
     geom_line(size = 0.2, color = "skyblue") +
     geom_point(size = 0.5, color = "skyblue") +
-    labs(title = "Scenario 2 Observed Trajectories", x = "Time", y = "Value")
+    labs(title = "Scenario 7 Observed Trajectories", x = "Time", y = "Value")
   
   source("./EHR-registration-subtype-main/algorithm.R")
   data_recover<-SubtypeAware_Registration(data=data_shifted,alpha=0.95,k_range=2:8,timepos_option=c(4,3,2,1),tau=0.45,tmin=1,tmax=17,nots=c(8,13))
@@ -119,7 +119,7 @@ library(patchwork)
   p3 <- ggplot(data_recover, aes(x = Time, y = Value, group = ID, color = as.factor(ID <= 500))) +
     geom_line(size = 0.2) +
     geom_point(size = 0.5) +
-    labs(title = "Scenario 2 Registered Trajectories", x = "Time", y = "Value", color = "Group") +
+    labs(title = "Scenario 7 Registered Trajectories", x = "Time", y = "Value", color = "Group") +
     scale_color_manual(values = c("green", "orange"), labels = c("Group 1", "Group 2")) +
     theme(
       legend.position = c(0.99, 0.02), 
