@@ -83,8 +83,9 @@ The experiments require:
 
 - **`real_data_prediction/mimic_iv_data_pull.py`**: Extracts all raw Creatinine records of the desired cohort from MIMIC-IV dataset in the format of csv.
 - **`real_data_prediction/gen_AKI_labels.py`**: Generates baseline Creatinine levels and corresponding severe AKI labels for subjects.
-- **`real_data_prediction/AKI_predict_main.py`**: Reports severe AKI prediction metrics in terms of mean and 95% confidence interval (**Tables 5 and 6**).
-- **`real_data_prediction/registration_baseline/gen_reg_data.py`**: Reports severe AKI prediction metrics using the baseline method (**Tables 5 and 6**).
+- **`real_data_prediction/AKI_predict_main.py`**: Reports severe AKI prediction metrics (including metrics from subgroup analysis on age and gender) in terms of mean and 95% confidence interval (**Tables 5, 6, 7, and 8**).
+- **`real_data_prediction/predict_utils.py`**: Contains helper functions for performing severe AKI prediction and subgroup analysis on age and gender.
+- **`real_data_prediction/registration_baseline/gen_reg_data.py`**: Generates recovered data using the baseline method.
 
 #### Data Source
 The dataset used for real data analysis is derived from the **MIMIC-IV Database**. For more details, visit the [MIMIC-IV database](https://physionet.org/content/mimiciv/3.1/).
