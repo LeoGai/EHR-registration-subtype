@@ -78,7 +78,8 @@ The experiments require:
 - **`AKI_DA_KM_RE/`**: Contains scripts for implementing the Registration algorithm and performing related tasks (Unsupervised Learning, Clinical Evaluation) using **k-means** clustering.  
   - **`AKI_DA_KM.R`**: Executes the Registration algorithm for K values ranging from [2, 8], generating the **Registered Data** saved as `AKI_data_recover2.csv`.  
   - **`AKI_DA_KM_LR.R`**: Executes the Registration algorithm for K values ranging from [5, 8].  
-  - **`AKI_DA_KM_SR.R`**: Executes the Registration algorithm for K values ranging from [2, 4].  
+  - **`AKI_DA_KM_SR.R`**: Executes the Registration algorithm for K values ranging from [2, 4].
+    
   Running these scripts generates the results corresponding to **Tables 2, 3, and 4** in the manuscript.
 
 - **`real_data_prediction/mimic_iv_data_pull.py`**: Extracts all raw Creatinine records of the desired cohort from MIMIC-IV dataset in the format of csv.
