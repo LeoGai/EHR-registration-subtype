@@ -48,7 +48,7 @@ The experiments require:
 
 ### Simulation Study
 
-- The `Simulation/` directory contains all files related to simulation studies. This directory includes eight R scripts: `Scenario1.R`, `Scenario2.R`, `Scenario3.R`, `Scenario4.R`, `Scenario5.R`, `Scenario6.R`, `Scenario7.R`, and `Scenario8.R`. Each script corresponds to a specific simulation scenario (Scenario 1-8) used in the study. Running these scripts will generate the results summarized in **Table 1** of the manuscript.
+- The `Simulation/` directory contains all files related to simulation studies. This directory includes eight R scripts: `Scenario1.R`, `Scenario2.R`, `Scenario3.R`, `Scenario4.R`, `Scenario5.R`, `Scenario6.R`, `Scenario7.R`, and `Scenario8.R`. Each script corresponds to a specific simulation scenario (Scenario 1-8) used in the study. Running these scripts will generate the results summarized in **Table 8** of the manuscript.
 
 - The `Simulation/Figs/` directory contains all R scripts for visualizing the simulation study results. Running these scripts will generate the eight Simulation Results Figures (Figures 4–11) included in the manuscript.
 
