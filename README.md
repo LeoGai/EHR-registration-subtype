@@ -72,7 +72,8 @@ The experiments require:
 - **`AKI_DA_RE/`**: Contains scripts for implementing the Registration algorithm and performing related tasks (Unsupervised Learning, Clinical Evaluation) using **k-medoids** clustering.  
   - **`AKI_DA.R`**: Executes the Registration algorithm for K values ranging from [2, 8], generating the **Registered Data** saved as `AKI_data_recover.csv`.  
   - **`AKI_DA_LR.R`**: Executes the Registration algorithm for K values ranging from [5, 8].  
-  - **`AKI_DA_SR.R`**: Executes the Registration algorithm for K values ranging from [2, 4].  
+  - **`AKI_DA_SR.R`**: Executes the Registration algorithm for K values ranging from [2, 4].
+  - **`Phenotypefigs.R`**: Generates the two figures in Section 4.2.1.  
   Running these scripts generates the results corresponding to **Tables 2, 3, and 4** in the manuscript.
 
 - **`AKI_DA_KM_RE/`**: Contains scripts for implementing the Registration algorithm and performing related tasks (Unsupervised Learning, Clinical Evaluation) using **k-means** clustering.  
