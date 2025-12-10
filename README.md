@@ -48,19 +48,19 @@ The experiments require:
 
 ### Simulation Study
 
-- The `Simulation/` directory contains all files related to simulation studies. This directory includes eight R scripts: `Scenario1.R`, `Scenario2.R`, `Scenario3.R`, `Scenario4.R`, `Scenario5.R`, `Scenario6.R`, `Scenario7.R`, and `Scenario8.R`. Each script corresponds to a specific simulation scenario (Scenario 1-8) used in the study. Running these scripts will generate the results summarized in **Table 8** of the manuscript.
+- The `Simulation/` directory contains all files related to simulation studies. This directory includes eight R scripts: `Scenario1.R`, `Scenario2.R`, `Scenario3.R`, `Scenario4.R`, `Scenario5.R`, `Scenario6.R`, `Scenario7.R`, and `Scenario8.R`. Each script corresponds to a specific simulation scenario (Scenario 1-8) used in the study. Running these scripts will generate the results summarized in **Table 1** of the supplementary materials.
 
-- The `Simulation/Figs/` directory contains all R scripts for visualizing the simulation study results. Running these scripts will generate the eight Simulation Results Figures (Figures 4–11) included in the manuscript.
+- The `Simulation/Figs/` directory contains all R scripts for visualizing the simulation study results. Running these scripts will generate the eight Simulation Results (**Figures 1–8**) included in the supplementary materials.
 
 #### Ablation Studies
-- The `Simulation_ablation1/`, `Simulation_ablation2/`, and `Simulation_ablation3/` directories hold scripts for the smoothing-spline (**Table 9**), RKHS (**Table 10**), and k-means (**Table 11**) ablation studies, respectively.
+- The `Simulation_ablation1/`, `Simulation_ablation2/`, and `Simulation_ablation3/` directories hold scripts for the smoothing-spline (Supplementary Materials **Table 2**), RKHS (Supplementary Materials **Table 3**), and k-means (Supplementary Materials **Table 4**) ablation studies, respectively.
 
 #### Sensitivity Analyses
 - The `Sensitivity_analyses/` folder holds six sub-folders: `SA_1_3/`, `SA_4_6/`, `SA_7_9/`, `SA_10_14/`, `SA_15_21/`, and `SA_22_25/`. 
-- Each sub-folder contains a script of the same name (e.g., SA_1_3.R) that conducts sensitivity analysis on one specific aspect: outliers, missing data, noise, $\alpha$, M and $\tau$. After running the individual scripts, execute SA_Figs.R to create Figures 12–17 for the manuscript.
+- Each sub-folder contains a script of the same name (e.g., SA_1_3.R) that conducts sensitivity analysis on one specific aspect: outliers, missing data, noise, $\alpha$, M and $\tau$. After running the individual scripts, execute SA_Figs.R to create **Figures 9–14** for the Supplementary Materials.
 
 #### Additional Comparison Results
-- The `Comparison_DTW/`directory contains scripts for comparing our method with the DTW method on the clustering task (**Table 12**).
+- The `Comparison_DTW/`directory contains scripts for comparing our method with the DTW method on the clustering task (Supplementary Materials **Table 5**).
   
 ### Real Data Experiment
 
@@ -74,18 +74,18 @@ The experiments require:
   - **`AKI_DA_LR.R`**: Executes the Registration algorithm for K values ranging from [5, 8].  
   - **`AKI_DA_SR.R`**: Executes the Registration algorithm for K values ranging from [2, 4].\\
 
-  Running these scripts generates the results corresponding to **Tables 1, 2, and 3** in the manuscript.
-  - **`Phenotypefigs.R`**: Generates the two figures in Section 4.2.1.  
+  Running these scripts generates the results corresponding to **Tables 1, 2, and 3** in the main text.
+  - **`Phenotypefigs.R`**: Generates the two figures in main text **Figures 2-3**.  
 - **`AKI_DA_KM_RE/`**: Contains scripts for implementing the Registration algorithm and performing related tasks (Unsupervised Learning, Clinical Evaluation) using **k-means** clustering.  
   - **`AKI_DA_KM.R`**: Executes the Registration algorithm for K values ranging from [2, 8], generating the **Registered Data** saved as `AKI_data_recover2.csv`.  
   - **`AKI_DA_KM_LR.R`**: Executes the Registration algorithm for K values ranging from [5, 8].  
   - **`AKI_DA_KM_SR.R`**: Executes the Registration algorithm for K values ranging from [2, 4].
     
-  Running these scripts generates the results corresponding to **Tables 1, 2, and 3** in the manuscript.
+  Running these scripts generates the results corresponding to **Tables 1, 2, and 3** in the main text.
 
 - **`real_data_prediction/mimic_iv_data_pull.py`**: Extracts all raw Creatinine records of the desired cohort from MIMIC-IV dataset in the format of csv.
 - **`real_data_prediction/gen_AKI_labels.py`**: Generates baseline Creatinine levels and corresponding severe AKI labels for subjects.
-- **`real_data_prediction/AKI_predict_main.py`**: Reports severe AKI prediction metrics (including metrics from subgroup analysis on age and gender) in terms of mean and 95% confidence interval (**Tables 4, 5, 6, and 7**).
+- **`real_data_prediction/AKI_predict_main.py`**: Reports severe AKI prediction metrics (including metrics from subgroup analysis on age and gender) in terms of mean and 95% confidence interval (main text **Tables 4, 5, 6, and 7**).
 - **`real_data_prediction/predict_utils.py`**: Contains helper functions for performing severe AKI prediction and subgroup analysis on age and gender.
 - **`real_data_prediction/registration_baseline/gen_reg_data.py`**: Generates recovered data using the baseline method.
 
