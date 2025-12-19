@@ -7,6 +7,8 @@ This repository contains the code scripts used in the following paper:
 
 If you have any question about this code, please contact Xin Gai (xg.biostat@gmail.com).
 
+The corresponding **R package** implementing the proposed registration method is publicly available at \url{https://github.com/LeoGai/subtypeReg}.
+
 # Reproducing Experiments
 
 ## Setup
